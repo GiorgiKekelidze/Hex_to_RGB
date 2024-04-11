@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>Hex to RGB Color Converter</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+
+    </head>
+    <body>
+        <div id = "top"><button id="leftbt"><a href="" id="lefta">RapidTables</a></button><button id="rightbt"><i class="gg-search"></i>Search</button></div>
+        <div id = "bottom">
+            <div id="links">
+                <button><a href="">Home </a></button> > <button><a href = "">Conversion</a></button> > <button><a href="">Color Conversion</a></button> > <button><a href="">Hex to RGB</a></button>
+            </div>
+            <p id="wlcm">Hex to RGB Color Converter</p>
+            <p id = "entr">Enter 6 digit hex color code and press <b>Convert</b> button:</p>
+            <div id = "converter">
+                <p id="hxcd">Hex color code (#RRGGBB)</p>
+                <form id = "frm">
+                    <input type="text" class="inpt" placeholder="000000" id="main_input">
+                    <div id="CVS">
+                        <button id="convert"><img src="circle-of-two-clockwise-arrows-rotation.png" id="cnvrt"></img>Convert</button>
+                        <button id="reset"><img src="close.png" id="rs"></img>Reset</button>
+                        <button id="swap"><img src="swap.png"  id="swp"></img>Swap</button>
+                    </div>
+                    <div id="RGB">
+                        <div id="red">
+                            <p>Red (0-255)</p>
+                            <input class="inpt clrinpt" id="rdin" readonly>
+                        </div>
+                        <div id="green">
+                            <p>Green (0-255)</p>
+                            <input class="inpt clrinpt" id="grin" readonly>
+                        </div>
+                        <div id="blue">
+                            <p>Blue (0-255)</p>
+                            <input class="inpt clrinpt" id="blin" readonly>
+                        </div>
+                    </div>
+                    <div id="RGB">
+                        <div id="red">
+                            <p>Red (0-1)</p>
+                            <input class="inpt clrinpt" id="rdzo"readonly>
+                        </div>
+                        <div id="green">
+                            <p>Green (0-1)</p>
+                            <input class="inpt clrinpt" id="grzo" readonly>
+                        </div>
+                        <div id="blue">
+                            <p>Blue (0-1)</p>
+                            <input class="inpt clrinpt" id="blzo" readonly>
+                        </div>
+                    </div>
+                    <div id="cssclr">
+                        <p>CSS color</p>
+                        <input class="inpt" readonly id="cclr">
+                    </div>
+                    <div id="clrpreview">
+                        <p>Color preview</p>
+                        <input class="inpt clrprvw" readonly id="prvw">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="main.js" async defer></script>
+    </body>
+</html>
